@@ -67,5 +67,6 @@ func DisplatyAllNotes() {
 		var category string
 
 		row.Scan(&idNote, &word, &definition, &category)
+		log.Println("[", category, "]", word, "-", definition)
 	}
 }
